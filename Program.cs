@@ -4,13 +4,9 @@ System.Console.Write($"\n{name}, enter your age, please: ");
 int age = int.Parse(Console.ReadLine());
 int keschasAge = 3;
 
-if(age < keschasAge)
-{
-    System.Console.WriteLine("You are younger than Kescha");
-}else if(age==keschasAge)
-{
-    System.Console.WriteLine("you are equals");
-}else
-{
-    System.Console.WriteLine("You are older");
-}
+string message =
+  age >= keschasAge
+    ? "You are older than Kescha"
+    : "You are younger than Kescha";
+
+System.Console.WriteLine(message);    
