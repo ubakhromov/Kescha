@@ -1,10 +1,12 @@
-﻿Console.WriteLine("Please, type your first and second number");
-Console.Write("1st number =  ");
-int firstNumber = int.Parse(Console.ReadLine());
-System.Console.Write("2nd number =  ");
-int secondNumber = int.Parse(Console.ReadLine());
+﻿System.Console.Write("Enter your name: ");
+string name = Console.ReadLine();
+System.Console.Write($"\n{name}, enter your age, please: ");
+int age = int.Parse(Console.ReadLine());
+int keschasAge = 3;
 
-System.Console.WriteLine($"addition is equal to: {firstNumber + secondNumber}");
-Console.WriteLine($"subtraction is equal to: {firstNumber - secondNumber}");
-Console.WriteLine($"multiplication is equal to: {firstNumber * secondNumber}");
-Console.WriteLine($"division is equal to: {firstNumber / secondNumber}");
+
+System.Console.WriteLine($"{name} your age is older than Kescha's age: {age > keschasAge}");
+
+System.Console.WriteLine($"{name} your age is younger than Kescha's age: {age < keschasAge}");
+
+System.Console.WriteLine($"{name} your age is equal to Kescha's age: {age == keschasAge}");
